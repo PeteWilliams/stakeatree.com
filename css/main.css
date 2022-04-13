@@ -13,12 +13,12 @@ body {
 #myVideo {
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
   min-width: 100%; 
   min-height: 100%;
   width: 100%;
   z-index: -2;
-  background: url('../img/video-still.jpg') no-repeat center center fixed; 
+  background: url('../img/video-still.jpg') no-repeat center top fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

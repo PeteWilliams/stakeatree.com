@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stake a Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+      background: ;
+    }
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      z-index: -2;
+    }
+
+    #overlay {
+      position: fixed; /* Sit on top of the page content */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+      z-index: -1;
+    }
+
+    .container {
+      display: flex;
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+    }
+
+    .container img {
+      margin:  auto;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="img/loop.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div id="overlay"></div>
+
+    <div class="container">
+      <img src="img/logo-white.png" />
+    </div>
+
+    <script>
+      var video = document.getElementById("myVideo");
+      video.playbackRate = 0.5;
+    </script>
+
+  </body>
+</html>

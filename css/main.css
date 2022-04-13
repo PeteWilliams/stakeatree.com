@@ -16,7 +16,13 @@ body {
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  width: 100%;
   z-index: -2;
+  background: url('../img/video-still.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #overlay {

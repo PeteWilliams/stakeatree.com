@@ -42,11 +42,11 @@ body {
   width:  50%;
   margin-top: 8%;
   margin-bottom: 4%;
+  max-width: 650px;
 }
 
 .logo img {
   width:  100%;
-  max-width: 650px;
 }
 
 main {

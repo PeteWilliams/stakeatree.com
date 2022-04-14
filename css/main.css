@@ -91,7 +91,18 @@ main .row div {
 }
 
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 500px) {
+  .row.chains {
+    display: block;
+  }
+
+ body main .row.chains div {
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 810px) and (min-width: 500px) {
   body main .row.chains div {
     width:  auto;
     text-align: center;

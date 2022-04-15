@@ -8,17 +8,16 @@ body {
   font-size: 17px;
   font-family: Poppins;
   color: white;
+  bacground-color:  black;
 }
 
 #myVideo {
   position: fixed;
   right: 0;
   top: 0;
-  min-width: 100%; 
   min-height: 100%;
-  width: 100%;
   z-index: -2;
-  background: url('../img/video-still.jpg') no-repeat center top fixed; 
+  background: url('../img/video-still.jpg') no-repeat center top fixed no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -3,10 +3,9 @@
 }
 
 body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-  font-family: Poppins;
+  margin: 0;=
+  font-size: 24px;
+  font-family: Lato, Helvetica, Arial;
   color: white;
   bacgkround-color:  black;
 }
@@ -38,15 +37,42 @@ body {
 
 .logo {
   margin: auto;
-  width:  50%;
+  width:  100%;
   margin-top: 8%;
-  margin-bottom: 4%;
-  max-width: 650px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo div {
+  display: inline-block;
 }
 
 .logo img {
   width:  100%;
+  max-width: 350px;
 }
+
+.logo h1, .logo h2 {
+  text-transform: uppercase;
+}
+
+.logo h1 {
+  font-size: 72px;
+  letter-spacing: 17px;
+  word-spacing: 13px;
+  margin-bottom:  0;
+  margin-right: -16px;
+  margin-left:  2px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight:  lighter;
+  letter-spacing: 5.5px;
+  margin-top:  0;
+  margin-right:  -5.5px;
+}
+
 
 main {
   width: 100%;
@@ -56,6 +82,23 @@ main {
   margin:  auto;
   text-align: center;
 } 
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size:  28px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.chains p {
+  font-size: 17px;
+}
 
 a {
   color:  white;
@@ -76,12 +119,26 @@ main .row div {
 }
 
 @media only screen and (max-width: 960px) {
-  .row {
-    display: block;
+
+  .logo img {
+    width: 50%;
   }
-  .row.chains {
-    display: flex;
+
+  .logo h1 {
+    font-size: 48px;
+    letter-spacing: 11px;
+    word-spacing: 9px;
+    margin-right: -11px;
+    margin-left:  2px;
   }
+
+  .logo h2 {
+    font-size: 23px;
+    letter-spacing: 4px;
+    margin-right:  -4px;
+    font-weight: light;
+  }
+
 
  main .row div {
     width: auto;
@@ -90,55 +147,40 @@ main .row div {
 }
 
 
-@media only screen and (max-width: 500px) {
+
+
+@media only screen and (max-width: 960px) {
+
+  .row {
+    display: block;
+  }
+  .row.chains {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
 
   .row.chains {
     display: block;
   }
 
-  main div.row.chains div {
-    text-align: center;
-    width:  auto;
-  }
-
-  main .row div img {
-    float: none;
-    margin:  10px   ;
-  }
-
-  /*
- body main .row.chains div {
-    width: auto;
-  }
-
-  main .row div img {
-    width: 130px;
-    height: 130px;
-    border-radius: 65px;
-  }
-*/
-}
-
-@media only screen and (max-width: 960px) and (min-width: 500px) {
-
-
   body main .row.chains div {
     width:  auto;
-    text-align: center;
+    max-width: none;
   }
 
-  body main .row.chains div img {
-    margin:  10px;
-  }
 }
 
 .row div img {
-  width: 150px;
-  height: 150px;
-  float: left;
+  width: 130px;
+  height: 130px;
   background: white;
   border-radius: 75px;
-  margin: 10px 30px 10px 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .row div h2 {
@@ -151,9 +193,10 @@ main .row.chains {
 
 
 main .row.chains div {
-  width: 420px;
-  min-width:  auto;
-  flex:  none;
+  text-align: center;
+  width:  100%;
+  max-width: 390px;
+  min-width:  auto; 
 }
 
 a.button {
